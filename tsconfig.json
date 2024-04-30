@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "allowJs": true,
+        "target": "es2022",
+        "jsx": "react",
+        "lib": [
+            "es2019",
+            "dom"
+        ],
+        "allowSyntheticDefaultImports" : true,
+        "esModuleInterop" : true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "inlineSources": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "paths": {
+            "pcui": ["node_modules/@playcanvas/pcui/react"],
+            "playcanvas-extras": ["node_modules/playcanvas/build/playcanvas-extras.mjs"]
+        }
+    },
+    "include": ["**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules", "**/*.js", "dist"]
+}
