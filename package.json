@@ -1,8 +1,7 @@
 {
-  "name": "model-viewer",
-  "version": "4.9.2",
-  "author": "PlayCanvas<support@playcanvas.com>",
-  "homepage": "https://playcanvas.com",
+  "name": "ar-viewer",
+  "version": "1.0.0",
+  "author": "jhasundarm@gmail.com>",
   "description": "PlayCanvas glTF Viewer",
   "keywords": [
     "2d",
@@ -14,12 +13,9 @@
     "viewer"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/playcanvas/model-viewer/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/playcanvas/model-viewer.git"
+    "url": "https://github.com/sundaram2021/ar.git"
   },
   "eslintConfig": {
     "root": true,
