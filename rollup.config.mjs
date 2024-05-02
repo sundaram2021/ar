@@ -28,6 +28,9 @@ const PCUI_DIR = path.resolve(process.env.PCUI_PATH || 'node_modules/@playcanvas
 const ENGINE_NAME = (BUILD_TYPE === 'debug') ? 'playcanvas.dbg.mjs' : 'playcanvas.mjs';
 const ENGINE_PATH = path.resolve(ENGINE_DIR, 'build', ENGINE_NAME);
 
+// export const REACT_CLERK_PUBLISHABLE_KEY = process.env.REACT_CLERK_PUBLISHABLE_KEY || 'default_value';
+
+
 // compile mustache template
 const compileMustache = (content) => {
     return Handlebars.compile(content.toString('utf8'))({

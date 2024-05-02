@@ -2,7 +2,7 @@
   "name": "ar-viewer",
   "version": "1.0.0",
   "author": "jhasundarm@gmail.com>",
-  "description": "PlayCanvas glTF Viewer",
+  "description": "AR Viewer",
   "keywords": [
     "2d",
     "3d",
@@ -68,6 +68,7 @@
     "qrious": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
     "react-visibility-sensor": "^5.1.1",
     "rollup": "^4.14.0",
     "rollup-plugin-copy": "^3.5.0",
@@ -88,5 +89,9 @@
     "build:local": "cross-env ENGINE_PATH=../engine npm run build",
     "watch:local": "cross-env ENGINE_PATH=../engine npm run watch",
     "lint": "eslint --ext .ts src"
+  },
+  "dependencies": {
+    "@clerk/clerk-react": "^5.0.2",
+    "firebase": "^10.11.1"
   }
 }
