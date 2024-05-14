@@ -84,6 +84,24 @@ const LoadControls = (props: { setProperty: SetProperty }) => {
         window.open(quizLink, "_self");
     };
 
+    // const downloadBtn = (file: string) => {
+    //     const link = document.getElementById('downlink');
+    //     link.setAttribute("download", file);
+    //     link.click();
+    // }
+
+    // const downloadLink = document.getElementById('downloadLink');
+
+    // downloadLink.addEventListener('click', function(e) {
+    //     e.preventDefault(); // Prevent default anchor tag behavior
+
+    //     // Assuming the zip file is located on the same server
+    //     const url = 'ezyzip.zip';
+
+    //     downloadLink.href = url;
+    //     downloadLink.download = 'ezyzip.zip';
+    // });
+
     return (
         <div>
             <div id='load-controls'>
@@ -107,7 +125,8 @@ const LoadControls = (props: { setProperty: SetProperty }) => {
                         return isValid;
                     }}/>
                     <Button class='secondary' id='glb-url-button' text='LOAD MODEL FROM URL' onClick={onUrlSelected} enabled={urlInputValid}></Button> */}
-                    <a href="ezyzip.zip" download="ezyzip.zip">download assets</a>
+                    {/* <button id='downlink' onClick={() => downloadBtn("https://github.com/sundaram2021/ar/blob/main/src/ui/ezyzip.zip")} >download assets</button> */}
+                    <a href="https://github.com/sundaram2021/ar/blob/main/src/ui/ezyzip.zip" target='_blank'>download assets</a>
                     <div className="quiz-div">
                         <button className='quiz-button' id='' onClick={getQuizLink} >
                             {isSignedIn ? "START A QUIZ" : "SIGN IN TO START A QUIZ"}
