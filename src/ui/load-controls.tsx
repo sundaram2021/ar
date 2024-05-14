@@ -67,6 +67,9 @@ const LoadControls = (props: { setProperty: SetProperty }) => {
         console.log(searchParams);
         searchParams.set("quizlink", quizLink);
 
+        console.log(quizLink);
+        
+
 
         const newPath = searchParams.toString();
         window.history.replaceState(null, '', `${window.location.pathname}?${newPath}`);
@@ -77,6 +80,8 @@ const LoadControls = (props: { setProperty: SetProperty }) => {
         //     alert("Please enter a valid Google Form link");
         // }
         // localStorage.removeItem("quizlink");
+
+        window.open(quizLink, "_self");
     };
 
     return (
@@ -102,6 +107,7 @@ const LoadControls = (props: { setProperty: SetProperty }) => {
                         return isValid;
                     }}/>
                     <Button class='secondary' id='glb-url-button' text='LOAD MODEL FROM URL' onClick={onUrlSelected} enabled={urlInputValid}></Button> */}
+                    <a href="ezyzip.zip" download="ezyzip.zip">download assets</a>
                     <div className="quiz-div">
                         <button className='quiz-button' id='' onClick={getQuizLink} >
                             {isSignedIn ? "START A QUIZ" : "SIGN IN TO START A QUIZ"}
